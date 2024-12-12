@@ -13,7 +13,7 @@ const GameStartScreen = () => {
         autoCorrect={false}
       />
       <PrimaryButton>Reset</PrimaryButton>
-      <PrimaryButton>Confirm</PrimaryButton>52
+      <PrimaryButton>Confirm</PrimaryButton>
     </View>
   );
 };
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     padding: 16,
     marginHorizontal: 24,
     marginTop: 100,
-    backgroundColor: "#7206c3",
+    backgroundColor: "#72063c",
     borderRadius: 8,
     // android box shadow
     elevation: 4,
