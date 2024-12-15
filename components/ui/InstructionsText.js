@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
   instructionsText: {
     color: Colors.accent500,
     fontSize: 24,
+    fontFamily: "open-sans",
   },
 });
 
