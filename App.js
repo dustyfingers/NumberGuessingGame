@@ -34,11 +34,18 @@ export default function App() {
     setRoundsNumber(0);
   };
 
+  const gameOverHandler = (numOfRounds) => {
+    setGameOver(true);
+    setRoundsNumber(numOfRounds);
+  };
+
   if (!fontsLoaded) return <AppLoading />;
 
   let screen = <GameStartScreen onPickNumber={pickedNumberHandler} />;
   if (userNumber)
-    screen = <GameScreen userNumber={userNumber} setGameOver={setGameOver} />;
+    screen = (
+      <GameScreen userNumber={userNumber} setGameOver={gameOverHandler} />
+    );
   if (gameOver && userNumber)
     screen = (
       <GameOverScreen

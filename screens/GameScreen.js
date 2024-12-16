@@ -46,7 +46,7 @@ const GameScreen = ({ userNumber, setGameOver }) => {
     setGuessedRounds((guesses) => [newGuess, ...guesses]);
   };
   useEffect(() => {
-    if (guess === userNumber) setGameOver(true);
+    if (guess === userNumber) setGameOver(guessedRounds.length);
   }, [guess, userNumber, setGameOver]);
   useEffect(() => {
     minBoundary = 1;
